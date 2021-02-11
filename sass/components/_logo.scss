@@ -1,0 +1,27 @@
+%logo {
+  color: $color-accent;
+  font-family: $font-family-logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+}
+
+.logo-nav {
+  @extend %logo;
+  margin-right: 93px;
+  padding: 24px 0;
+}
+
+.logo-right-part-dark {
+  color: $color-logo-dark;
+}
+
+.footer-logo {
+  @extend %logo;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo-right-part-light {
+  color: $color-light-main;
+}

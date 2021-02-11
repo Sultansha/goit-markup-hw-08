@@ -1,0 +1,54 @@
+.features {
+  padding-top: 88px;
+  padding-bottom: 100px;
+}
+
+.features-container {
+  text-align: left;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: calc((100% - (3 * 30px)) / 4);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features-title,
+.features-main-title {
+  margin: 0;
+  padding: 0;
+
+  color: $color-title-main;
+  font-weight: 700;
+}
+
+.features-title {
+  margin-bottom: 10px;
+
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.features-bcg-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 120px;
+  background-color: $background-color-team;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  line-height: 1.7;
+}

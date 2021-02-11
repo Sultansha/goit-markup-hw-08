@@ -1,0 +1,30 @@
+.contacts-list {
+  display: flex;
+  align-items: center;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  letter-spacing: 0.02em;
+  fill: currentColor;
+  color: inherit;
+  font-weight: 500;
+
+  transition: color $time-main $timing-function-main;
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.contacts-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts-icon {
+  margin-right: 10px;
+}
