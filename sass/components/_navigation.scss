@@ -1,12 +1,10 @@
 .nav {
   font-weight: 500;
-  display: flex;
-  align-items: center;
+  @include flexCenter();
 }
 
 .nav-list {
-  display: flex;
-  align-items: center;
+  @include flexCenter();
   letter-spacing: 0.02em;
 }
 

@@ -1,18 +1,11 @@
-.button {
-  font-family: inherit;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
+.main-button {
+  @extend %main-button;
+  @extend %color-button-accent;
+  @include main-button-hover();
+}
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 50px;
-
-  font-weight: 700;
-  line-height: 1.88;
-
-  background-color: $color-accent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.main-button-no-hover {
+  @extend %main-button;
+  @include main-button-hover($color-accent);
+  @extend %color-button-accent;
 }

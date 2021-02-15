@@ -1,11 +1,3 @@
-%logo {
-  color: $color-accent;
-  font-family: $font-family-logo;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-}
-
 .logo-nav {
   @extend %logo;
   margin-right: 93px;

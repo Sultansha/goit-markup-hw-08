@@ -1,0 +1,31 @@
+.social-item {
+  width: 44px;
+  height: 44px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-link {
+  &-team {
+    @extend %socialLink;
+    @include colorLink-focus($color-light-main);
+    background-color: $color-light-main;
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
+    }
+  }
+
+  &-footer {
+    @extend %socialLink;
+    color: $color-light-main;
+    background-color: $background-color-footer-social-link;
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
+    }
+  }
+}

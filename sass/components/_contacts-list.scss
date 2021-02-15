@@ -1,10 +1,16 @@
 .contacts-list {
-  display: flex;
-  align-items: center;
+  @include flexCenter();
 }
-.contacts {
-  display: flex;
-  align-items: center;
+
+.contacts-item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts-link {
+  @include flexCenter();
+
   padding-top: 32px;
   padding-bottom: 32px;
   letter-spacing: 0.02em;
@@ -16,12 +22,6 @@
   &:hover,
   &:focus {
     color: $color-accent;
-  }
-}
-
-.contacts-item {
-  &:not(:last-child) {
-    margin-right: 50px;
   }
 }
 

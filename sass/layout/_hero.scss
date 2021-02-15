@@ -22,12 +22,6 @@
   width: 696px;
 }
 
-.hero-title,
-.hero-button {
-  letter-spacing: 0.06em;
-  color: $color-light-main;
-}
-
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -37,12 +31,6 @@
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
-}
 
-.hero-button {
-  transition: background-color var(--main-time) var(--main-timing-function);
-  &:hover,
-  &:focus {
-    background-color: $background-color-accent-hover;
-  }
+  color: $color-light-main;
 }

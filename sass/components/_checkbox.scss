@@ -1,0 +1,59 @@
+.checkbox-label,
+.conditions {
+  line-height: 1.71;
+}
+
+.checkbox-label {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  text-align: left;
+  margin-left: 36px;
+}
+
+.checkbox-label::before {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: -13px;
+
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  background-image: url(../images/svg/check-off.svg);
+  transition: background-image $time-main $timing-function-main,
+    background-color $time-main $timing-function-main;
+  .checkbox-consent:checked + & {
+    background-image: url(../images/svg/check-on.svg);
+    background-color: $color-accent;
+  }
+
+  .checkbox-consent:focus + &,
+  .checkbox-consent:focus:checked + & {
+    box-shadow: 0 0 0 1px rgb(16, 16, 16);
+  }
+
+  .checkbox-consent:hover + & {
+    cursor: pointer;
+  }
+}
+
+.conditions {
+  display: inline-block;
+  text-decoration: underline;
+
+  color: $color-accent;
+}
+
+.checkbox-field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.checkbox-consent {
+  position: absolute;
+  appearance: none;
+}

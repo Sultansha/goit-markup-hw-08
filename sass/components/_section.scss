@@ -1,0 +1,12 @@
+.section {
+  @include sectionPaddingVertical();
+
+  &-paddingTop-0 {
+    @include sectionPaddingVertical(0);
+  }
+
+  &-background {
+    @include sectionPaddingVertical();
+    background-color: $background-color-team;
+  }
+}

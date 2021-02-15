@@ -1,0 +1,29 @@
+@mixin sectionPaddingVertical($paddingTop: 94px, $paddingBottom: 94px) {
+  padding-top: $paddingTop;
+  padding-bottom: $paddingBottom;
+}
+
+@mixin flexCenter($justify-content: center, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin main-button-hover($colorAccentHover: $background-color-accent-hover) {
+  &:hover,
+  &:focus {
+    background-color: $colorAccentHover;
+  }
+}
+
+@mixin colorLink-focus(
+  $colorFocus: $color-accent,
+  $colorLink: $color-link-main
+) {
+  color: $colorLink;
+
+  &:hover,
+  &:focus {
+    color: $colorFocus;
+  }
+}
