@@ -133,24 +133,3 @@
   width: 100%;
   margin-bottom: 20px;
 }
-
-.button-close {
-  position: absolute;
-  right: 8px;
-  top: 8px;
-
-  width: 30px;
-  height: 30px;
-  padding: 0;
-
-  fill: currentColor;
-  color: $color-logo-dark;
-  background-color: inherit;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  transition: color $time-main $timing-function-main;
-  &:hover,
-  &:focus {
-    color: $color-accent;
-  }
-}

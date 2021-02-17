@@ -1,30 +1,63 @@
 .contacts-list {
-  @include flexCenter();
+  @media screen and (max-width: $tablet-min) {
+    @include flexCenter(center, flex-start);
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
+
+  /* @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    max-width: $tablet-min;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  } */
 }
 
 .contacts-item {
+  @media screen and (max-width: $tablet-min) {
+    &:not(:first-child) {
+      margin-bottom: 32px;
+    }
+  }
   &:not(:last-child) {
-    margin-right: 50px;
+    /*  margin-right: 50px; */
   }
 }
 
 .contacts-link {
   @include flexCenter();
+  @media screen and (max-width: $mobile-max) {
+    font-size: 24px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    fill: currentColor;
+    color: inherit;
+    font-weight: 500;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
-  letter-spacing: 0.02em;
-  fill: currentColor;
-  color: inherit;
-  font-weight: 500;
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
+  }
 
-  transition: color $time-main $timing-function-main;
+  /* transition: color $time-main $timing-function-main;
   &:hover,
   &:focus {
     color: $color-accent;
-  }
+  } */
 }
 
 .contacts-icon {
-  margin-right: 10px;
+  @media screen and (max-width: $mobile-max) {
+    display: none;
+  }
+  /* margin-right: 10px; */
+}
+.contact-tel {
+  @media screen and (max-width: $mobile-max) {
+    font-size: 34px;
+    line-height: 1.176;
+    color: $color-accent;
+  }
 }

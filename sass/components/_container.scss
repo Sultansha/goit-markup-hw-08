@@ -1,27 +1,13 @@
 .container {
-  @extend %container;
+  width: 1200px;
+  /* outline: 1px solid red; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 
-  &-header {
-    @extend %container;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &-features {
-    @extend %container;
-    text-align: left;
-  }
-
-  &-footer {
-    @extend %container;
-    text-align: left;
-    display: flex;
-    align-items: baseline;
-  }
-}
-
-/*  @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+  @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
     width: $mobile;
   }
   @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
@@ -29,4 +15,21 @@
   }
   @media screen and (min-width: $desktop) {
     max-width: $desktop;
-  } */
+  }
+}
+.container-header {
+  text-align: left;
+  display: flex;
+  /* position: relative; */
+  /* justify-content: space-between; */
+}
+
+.container-features {
+  text-align: left;
+}
+
+.container-footer {
+  text-align: left;
+  display: flex;
+  align-items: baseline;
+}

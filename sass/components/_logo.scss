@@ -1,7 +1,15 @@
 .logo-nav {
   @extend %logo;
-  margin-right: 93px;
-  padding: 24px 0;
+  @media screen and (max-width: $tablet-min) {
+    padding: 16px 0;
+  }
+  /* margin-right: 93px;
+  padding: 24px 0; */
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .logo-right-part-dark {

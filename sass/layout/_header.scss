@@ -1,3 +1,35 @@
 .header {
+  background-color: #fff;
   border-bottom: 1px solid $color-header-border;
+}
+
+.nav-mobile {
+  @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+    width: $mobile;
+    /*  width: 100vw;
+    height: 100vh; */
+  }
+
+  position: absolute;
+  z-index: -1;
+
+  background-color: $color-light-main;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  transform: translateX(200%);
+  transition: transform $time-main $timing-function-main,
+    z-index $time-main $timing-function-main;
+
+  .button-nav.is-open + & {
+    transform: translateX(0);
+    z-index: 0;
+  }
 }

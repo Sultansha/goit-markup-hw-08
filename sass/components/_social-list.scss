@@ -1,3 +1,9 @@
 .social-list {
   display: flex;
 }
+
+.social-list-mobile {
+  @media screen and (min-width: $tablet-min) {
+    display: none;
+  }
+}
