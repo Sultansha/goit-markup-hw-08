@@ -12,3 +12,10 @@
        // mobileMenuRef.classList.toggle('is-open');
   })
 })();
+
+(() => {
+    const menuBtnRef = document.querySelector('[data-menu-button]');
+    menuBtnRef.addEventListener("click", () => {
+        menuBtnRef.classList.toggle("is-open");     
+  })
+})();

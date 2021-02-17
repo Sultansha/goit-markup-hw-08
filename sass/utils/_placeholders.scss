@@ -25,14 +25,13 @@
 
   font-family: inherit;
   font-size: 16px;
-  border: none;
-  border-radius: 4px;
-
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
 
   fill: currentColor;
+  border: none;
+  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color $time-main $timing-function-main;

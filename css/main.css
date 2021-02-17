@@ -22,12 +22,12 @@
   height: 50px;
   font-family: inherit;
   font-size: 16px;
-  border: none;
-  border-radius: 4px;
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   fill: currentColor;
+  border: none;
+  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -95,8 +95,10 @@ img {
   display: flex;
 }
 
-.features-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+  }
 }
 
 .footer {
@@ -192,32 +194,64 @@ img {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
-  max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/main-hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #2f303a;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    /* 
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, $gradient-hero, $gradient-hero),
+    url(../images/hero/main-hero.jpg);
+
+ 
+
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: #2f303a;
+
+   */
+  }
 }
 
 .hero-object {
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  /* width: 696px; */
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-object {
+    width: 360px;
+  }
 }
 
 .hero-title {
+  font-weight: 900;
+  color: #ffffff;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    /* 
   padding: 0;
-  font-weight: 900;
+
+  
   font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  color: #ffffff;
+  line-height: 1.36; */
+  }
 }
 
 .backdrop {
@@ -589,8 +623,8 @@ img {
 }
 
 .container {
-  width: 1200px;
-  /* outline: 1px solid red; */
+  /*  width: 1200px; */
+  outline: 1px solid red;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;

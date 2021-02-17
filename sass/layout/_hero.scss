@@ -1,36 +1,57 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: $background-color-hero;
+
+  @media screen and (max-width: $mobile-max) {
+    max-height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    /* 
   height: 600px;
   max-width: 1600px;
   background-image: linear-gradient(to right, $gradient-hero, $gradient-hero),
     url(../images/hero/main-hero.jpg);
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+ 
 
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: $background-color-hero;
+   */
+  }
 }
 
 .hero-object {
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  @media screen and (max-width: $desktop) {
+    width: 360px;
+  }
+
+  /* width: 696px; */
 }
 
 .hero-title {
+  font-weight: 900;
+  color: $color-light-main;
+  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+
+  @media screen and (max-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+    /* 
   padding: 0;
 
-  font-weight: 900;
+  
   font-size: 44px;
-  line-height: 1.36;
-  text-transform: uppercase;
-
-  color: $color-light-main;
+  line-height: 1.36; */
+  }
 }

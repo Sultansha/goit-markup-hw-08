@@ -1,3 +1,5 @@
 .features-list {
-  display: flex;
+  @media screen and (min-width: $tablet-min) {
+    display: flex;
+  }
 }
