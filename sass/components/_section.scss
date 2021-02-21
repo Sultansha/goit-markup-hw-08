@@ -1,12 +1,22 @@
 .section {
-  @include sectionPaddingVertical();
-
-  &-paddingTop-0 {
-    @include sectionPaddingVertical(0);
+  @media screen and (max-width: $tablet-max) {
+    @include sectionPaddingVertical(60px, 60px);
   }
 
+  /*  @include sectionPaddingVertical();*/
+
+  /* &-paddingTop-0 {
+    @include sectionPaddingVertical(0);
+  } */
+
   &-background {
-    @include sectionPaddingVertical();
+    @include sectionPaddingVertical(60px, 60px);
     background-color: $background-color-team;
+  }
+}
+
+.section-none {
+  @media screen and(max-width: $tablet-max) {
+    display: none;
   }
 }

@@ -3,13 +3,15 @@
   padding-bottom: $paddingBottom;
 }
 
-@mixin flexCenter($justify-content: center, $align-items: center) {
-  display: flex;
+@mixin flexCenter($justify-content: center, $align-items: center, $flex: flex) {
+  display: $flex;
   justify-content: $justify-content;
   align-items: $align-items;
 }
 
 @mixin main-button-hover($colorAccentHover: $background-color-accent-hover) {
+  color: $color-light-main;
+  background-color: $color-accent;
   &:hover,
   &:focus {
     background-color: $colorAccentHover;
@@ -25,5 +27,6 @@
   &:hover,
   &:focus {
     color: $colorFocus;
+    border-color: $color-accent;
   }
 }

@@ -23,19 +23,29 @@
 }
 
 .social-link {
+  @include flexCenter();
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+
   &-team {
-    @extend %socialLink;
-    @include colorLink-focus($color-light-main);
+    color: $color-link-main;
+
     background-color: $color-light-main;
 
+    /*  transition: color $time-main $timing-function-main,
+      background-color $time-main $timing-function-main;
+
+    @include colorLink-focus($color-light-main);
+    
     &:hover,
     &:focus {
       background-color: $color-accent;
-    }
+    } */
   }
 
   &-footer {
-    @extend %socialLink;
     color: $color-light-main;
     background-color: $background-color-footer-social-link;
 
@@ -44,6 +54,7 @@
       background-color: $color-accent;
     }
   }
+
   &-mobile {
     font-weight: 500;
     font-size: 18px;

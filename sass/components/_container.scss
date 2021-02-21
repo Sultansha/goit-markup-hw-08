@@ -7,29 +7,37 @@
   margin-left: auto;
   text-align: center;
 
-  @media screen and (min-width: $mobile) and (max-width: $mobile-max) {
+  @media screen and (min-width: $mobile) {
     width: $mobile;
   }
-  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+
+  &-header {
+    text-align: left;
+    @media screen and(max-width:$mobile-max) {
+      position: relative;
+    }
+    /* display: flex;
+    
+    justify-content: space-between; */
+  }
+  /* &-features {
+    text-align: left;
+  } */
+}
+
+/*   @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
     max-width: $tablet-min;
   }
   @media screen and (min-width: $desktop) {
     max-width: $desktop;
   }
 }
-.container-header {
-  text-align: left;
-  display: flex;
-  /* position: relative; */
-  /* justify-content: space-between; */
-}
 
-.container-features {
-  text-align: left;
-}
 
-.container-footer {
+
+
+/* .container-footer {
   text-align: left;
   display: flex;
   align-items: baseline;
-}
+} */

@@ -1,3 +1,17 @@
 .title-main {
-  @extend %titleMain;
+  margin: 0 0 30px 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.179;
+
+  color: $color-title-main;
+  /*  margin: 0 0 50px 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 36px;
+
+  color: $color-title-main; */
 }

@@ -1,10 +1,17 @@
 .work-filter {
-  @include flexCenter;
-  margin-bottom: 50px;
+  @include flexCenter(flex-start);
+  flex-wrap: wrap;
+
+  margin-bottom: 25px;
+  /* margin-bottom: 50px; */
 }
 
-.work-filter-item:not(:last-child) {
-  margin-right: 8px;
+.work-filter-item {
+  margin-bottom: 15px;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .work-filter-button {
@@ -29,6 +36,7 @@
   &:hover {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
-    @extend %color-button-accent;
+    color: $color-light-main;
+    background-color: $color-accent;
   }
 }

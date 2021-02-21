@@ -1,8 +1,33 @@
+.nav-mobile {
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+
+    position: absolute;
+    background-color: $color-light-main;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    transition: display $time-main $timing-function-main;
+
+    .button-nav.is-open + & {
+      display: flex;
+    }
+  }
+}
+
 .nav {
   font-weight: 500;
   /* margin-right: auto; */
-  @media screen and (max-width: $tablet-min) {
+  @media screen and (max-width: $mobile-max) {
     @include flexCenter(left);
+    margin-bottom: auto;
   }
 }
 
@@ -42,12 +67,7 @@
 }
 
 .nav-link-current {
-  @media screen and (max-width: $tablet-min) {
-    padding: 0;
-  }
   position: relative;
-  display: block;
-  /* padding: 32px 0px; */
   color: $color-accent;
 
   @media screen and (min-width: $tablet-min) {

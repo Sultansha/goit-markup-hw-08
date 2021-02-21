@@ -1,14 +1,18 @@
 .checkbox-label,
 .conditions {
-  line-height: 1.71;
+  line-height: 1.167;
+  /* line-height: 1.71; */
 }
 
 .checkbox-label {
+  font-size: 12px;
+
   position: relative;
   display: inline-block;
   max-width: 100%;
   text-align: left;
-  margin-left: 36px;
+  margin-left: 24px;
+  /*  margin-left: 36px; */
 }
 
 .checkbox-label::before {
@@ -41,10 +45,20 @@
 }
 
 .conditions {
+  position: relative;
   display: inline-block;
-  text-decoration: underline;
-
   color: $color-accent;
+  text-decoration: none;
+  &::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: $color-accent;
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+  }
 }
 
 .checkbox-field {

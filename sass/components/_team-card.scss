@@ -5,6 +5,9 @@
   width: calc((100% - 3 * 30px) / 4);
 
   background-color: $color-light-main;
+  @media screen and(max-width: $mobile-max) {
+    width: 450px;
+  }
   &:not(:last-child) {
     margin-right: 30px;
   }
@@ -12,12 +15,16 @@
 
 .team-card {
   width: 100%;
-  padding: 30px 32px;
+  @media screen and(max-width: $mobile-max) {
+    padding: 24px 122px;
+  }
+  /* padding: 30px 32px; */
 }
 
 .team-name,
 .team-position {
   font-size: 16px;
+  line-height: 1.188;
 }
 
 .team-name {
