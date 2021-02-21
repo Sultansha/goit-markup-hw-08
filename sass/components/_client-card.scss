@@ -1,10 +1,16 @@
 .clients-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width: $mobile) {
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
   @media screen and(max-width: $mobile-max) {
     width: 210px;
     height: 90px;
-    &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 30px;
-    }
   }
   /*  width: 170px;
   height: 90px;

@@ -1,10 +1,15 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
 .social-list-mobile {
+  @media screen and(max-width: $mobile-max) {
+    justify-content: flex-start;
+  }
   @media screen and (min-width: $tablet-min) {
     display: none;
+    justify-content: flex-start;
   }
 }

@@ -19,7 +19,7 @@
 }
 
 .follow-input {
-  width: 450px;
+  width: 100%;
   /*  width: 358px; */
   height: 50px;
   padding: 15px 16px;
@@ -29,6 +29,9 @@
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 20px;
+  @media screen and(min-width: $mobile) {
+    width: 450px;
+  }
 }
 
 .icon-follow {

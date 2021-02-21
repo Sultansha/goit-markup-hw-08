@@ -38,6 +38,9 @@
   &:focus {
     color: $color-accent;
   }
+  &.is-open {
+    position: fixed;
+  }
 }
 
 .button-nav .nav-icon-close {
