@@ -10,7 +10,7 @@
   text-align: center;
 
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    max-width: $mobile;
   }
 
   &-header {
@@ -18,11 +18,12 @@
     @media screen and(max-width:$mobile-max) {
       position: relative;
     }
+  }
 
-    /* display: flex;
+  /* display: flex;
     
     justify-content: space-between; */
-  }
+
   /* &-features {
     text-align: left;
   } */

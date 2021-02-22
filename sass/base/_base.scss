@@ -9,6 +9,10 @@ body {
   color: $color-text-main;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a,
 button {
   cursor: pointer;
