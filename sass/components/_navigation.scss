@@ -16,6 +16,13 @@
     z-index: 1;
     overflow-y: scroll;
   }
+  @media screen and(min-width: $tablet-min) {
+    display: block;
+    position: static;
+    width: 100%;
+    height: auto;
+    transition: none;
+  }
 }
 
 .nav-mobile {
@@ -28,24 +35,32 @@
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
+  }
+  @media screen and(min-width: $tablet-min) {
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 0;
+    width: auto;
+  }
 
-    /*position: fixed;
+  /*position: fixed;
     background-color: $color-light-main;
     top: 0;
     left: 0;
 justify-content: space-between;
   width: 100%;
     width: 100vw;*/
-  }
 }
 
 .nav {
   font-weight: 500;
   @include flexCenter(left);
   margin-bottom: auto;
-  /* margin-right: auto; */
-  @media screen and (max-width: $mobile-max) {
+  @media screen and(min-width:$tablet-min) {
+    margin: 0;
   }
+  /* margin-right: auto; */
 }
 
 .nav-list {
@@ -53,19 +68,20 @@ justify-content: space-between;
   font-size: 40px;
   line-height: 1.175;
 
-  @media screen and (max-width: $tablet-min) {
-  }
-  /* @media screen and (min-width: $tablet-min) {
+  @media screen and(min-width: $tablet-min) {
     @include flexCenter();
     font-size: 14px;
     line-height: 1.143;
-  } */
+    margin-right: auto;
+  }
 }
 
 .nav-item:not(:last-child) {
   margin-bottom: 32px;
 
-  @media screen and (max-width: $tablet-min) {
+  @media screen and(min-width: $tablet-min) {
+    margin-bottom: 0;
+    margin-right: 50px;
   }
 
   /* margin-right: 50px; */
@@ -77,10 +93,11 @@ justify-content: space-between;
   color: $color-title-main;
   transition: color $time-main $timing-function-main;
 
-  @media screen and (max-width: $tablet-min) {
+  @media screen and (min-width: $tablet-min) {
+    padding: 32px 0px;
   }
 
-  /* padding: 32px 0px; */
+  /*  */
 
   /*  &:hover,
   &:focus {
@@ -96,7 +113,7 @@ justify-content: space-between;
     &::after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: -1px;
       left: 0;
       display: block;
       width: 100%;

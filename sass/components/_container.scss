@@ -12,11 +12,17 @@
   @media screen and (min-width: $mobile) {
     max-width: $mobile;
   }
+  @media screen and (min-width: $tablet-min) {
+    max-width: $tablet-min;
+  }
 
   &-header {
     text-align: left;
     @media screen and(max-width:$mobile-max) {
       position: relative;
+    }
+    @media screen and(min-width: $tablet-min) {
+      display: flex;
     }
   }
 

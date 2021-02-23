@@ -39,7 +39,11 @@
     color: $color-accent;
   }
   &.is-open {
-    position: absolute;
+    position: fixed;
+  }
+
+  @media screen and(min-width: $tablet-min) {
+    display: none;
   }
 }
 

@@ -24,10 +24,12 @@
   }
 
   &-nav {
-    @media screen and (max-width: $tablet-min) {
+    @media screen and (max-width: $mobile-max) {
       padding: 16px 0;
-      /* margin-right: 93px;
-        padding: 24px 0; */
+    }
+    @media screen and (min-width: $tablet-min) {
+      padding: 26px 0;
+      margin-right: 88px;
     }
   }
 }

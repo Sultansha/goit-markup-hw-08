@@ -17,7 +17,7 @@
 }
 
 .team-card {
-  width: 100%;
+  width: auto;
   @include flexCenter($flex: column);
   padding: 24px;
   /* @media screen and(max-width: $mobile-max) {

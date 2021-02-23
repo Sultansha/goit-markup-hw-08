@@ -24,7 +24,7 @@
 
 .features-bcg-icon {
   @include flexCenter();
-  width: 100%;
+  width: auto;
   height: 120px;
   background-color: $background-color-team;
   border-radius: 4px;

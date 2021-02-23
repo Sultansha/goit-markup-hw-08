@@ -51,7 +51,7 @@
   text-decoration: none;
   &::before {
     content: '';
-    width: 100%;
+    width: auto;
     height: 1px;
     background-color: $color-accent;
     position: absolute;
@@ -63,7 +63,7 @@
 
 .checkbox-field {
   position: relative;
-  width: 100%;
+  width: auto;
   margin-bottom: 30px;
 }
 
