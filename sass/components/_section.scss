@@ -1,17 +1,17 @@
 .section {
-  @media screen and (max-width: $tablet-max) {
-    @include sectionPaddingVertical(60px, 60px);
+  @include sectionPaddingVertical(60px, 60px);
+
+  @media screen and(min-width: $desktop) {
+    @include sectionPaddingVertical();
   }
-
-  /*  @include sectionPaddingVertical();*/
-
-  /* &-paddingTop-0 {
-    @include sectionPaddingVertical(0);
-  } */
 
   &-background {
     @include sectionPaddingVertical(60px, 60px);
     background-color: $background-color-team;
+
+    @media screen and(min-width: $desktop) {
+      @include sectionPaddingVertical();
+    }
   }
 }
 

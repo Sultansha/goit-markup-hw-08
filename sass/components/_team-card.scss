@@ -3,27 +3,33 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   max-width: 100%;
-  /* width: calc((100% - 3 * 30px) / 4); */
   background-color: $color-light-main;
-  @media screen and(min-width: $mobile-max) {
+
+  margin: 15px;
+
+  @media screen and(min-width: $mobile) {
     width: 450px;
   }
+  @media screen and(min-width: $tablet-min) {
+    width: 354px;
+  }
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-    /* margin-right: 30px;
-  } */
+  @media screen and(min-width: $desktop) {
+    width: 270px;
   }
 }
 
 .team-card {
   width: auto;
-  @include flexCenter($flex: column);
+
   padding: 24px;
-  /* @media screen and(max-width: $mobile-max) {
-    padding: 24px 122px;
-  } */
-  /* padding: 30px 32px; */
+  @media screen and(min-width: $tablet-min) {
+    padding-top: 30px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    padding-top: 30px 32px;
+  }
 }
 
 .team-name,

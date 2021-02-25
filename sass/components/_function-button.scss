@@ -20,10 +20,8 @@
 }
 
 .button-nav {
-  position: absolute;
+  display: inline-block;
   z-index: 2;
-  right: 15px;
-  top: 10px;
 
   width: 40px;
   height: 40px;
@@ -40,6 +38,8 @@
   }
   &.is-open {
     position: fixed;
+    right: 15px;
+    top: 10px;
   }
 
   @media screen and(min-width: $tablet-min) {
@@ -58,13 +58,3 @@
 .button-nav.is-open .nav-icon-menu {
   display: none;
 }
-
-/* .nav-icon-menu {
-  width: 24px;
-  height: 16px;
-} */
-
-/* .nav-icon-close {
-  width: 19px;
-  height: 19px;
-} */

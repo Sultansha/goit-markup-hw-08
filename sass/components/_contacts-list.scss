@@ -1,33 +1,35 @@
 .contacts-list {
-  @media screen and (max-width: $tablet-min) {
-    @include flexCenter(center, flex-start);
-    flex-direction: column-reverse;
-    margin-bottom: 64px;
-  }
+  @include flexCenter(center, flex-start);
+  flex-direction: column-reverse;
+  margin-bottom: 64px;
 
   @media screen and (min-width: $tablet-min) {
     flex-direction: column;
-
     margin-bottom: 0;
   }
-  /*@media screen and (min-width: $desktop) {
-    max-width: $desktop;
-  } */
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .contacts-item {
-  @media screen and (max-width: $mobile-max) {
-    &:not(:first-child) {
-      margin-bottom: 32px;
-    }
+  &:not(:first-child) {
+    margin-bottom: 32px;
   }
 
   @media screen and(min-width: $tablet-min) {
     width: 100%;
+    &:not(:first-child) {
+      margin-bottom: 0;
+    }
   }
 
-  &:not(:last-child) {
-    /*  margin-right: 50px; */
+  @media screen and(min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
@@ -40,6 +42,11 @@
   fill: currentColor;
   color: inherit;
   font-weight: 500;
+  font-size: 5vw;
+
+  @media screen and(min-width: $mobile) {
+    font-size: 24px;
+  }
 
   @media screen and(min-width: $tablet-min) {
     font-size: 12px;
@@ -51,12 +58,11 @@
       color: $color-accent;
     }
   }
-
-  /* padding-top: 32px;
-    padding-bottom: 32px; */
+  @media screen and(min-width: $desktop) {
+    font-size: 14px;
+    padding: 32px 0;
+  }
 }
-
-/*  */
 
 .contacts-icon {
   display: none;
@@ -67,14 +73,25 @@
 }
 
 .contact-tel {
-  @media screen and (max-width: $mobile-max) {
+  font-size: 7.08vw;
+  line-height: 1.176;
+  color: $color-accent;
+
+  @media screen and (min-width: $mobile) {
     font-size: 34px;
-    line-height: 1.176;
-    color: $color-accent;
   }
   @media screen and(min-width: $tablet-min) {
+    font-size: 12px;
+    line-height: 1.167;
+    color: inherit;
     padding-top: 0;
     padding-bottom: 21px;
     margin-top: 10px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    font-size: 14px;
+    padding: 32px 0;
+    margin-top: 0;
   }
 }

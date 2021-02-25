@@ -4,6 +4,7 @@
   max-height: 400px;
   width: auto;
   max-width: $mobile;
+  height: 400px;
 
   padding-top: 118px;
   padding-bottom: 118px;
@@ -23,7 +24,7 @@
       url(../images/hero/hero-480-2.jpg);
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: calc(#{$mobile} + 1px)) {
     max-width: $tablet-min;
 
     background-image: linear-gradient(to right, $gradient-hero, $gradient-hero),
@@ -40,9 +41,11 @@
     }
   }
 
-  @media screen and (min-width: 769px) {
-    max-width: $desktop;
+  @media screen and (min-width: calc(#{$tablet-min} + 1px)) {
+    max-width: 1600px;
     min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(to right, $gradient-hero, $gradient-hero),
       url(../images/hero/hero-1600-1.jpg);
     @media screen and (min-device-pixel-ratio: 2),
@@ -60,24 +63,11 @@
   &-object {
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width: $desktop) {
-      max-width: 360px;
+    max-width: 360px;
+
+    @media screen and (min-width: $desktop) {
+      max-width: 696px;
     }
-
-    /* width: 696px; */
-
-    /* 
-  height: 600px;
-  max-width: 1600px;
-  background-image: linear-gradient(to right, $gradient-hero, $gradient-hero),
-    url(../images/hero/main-hero.jpg);
-
- 
-
-  padding-top: 200px;
-  padding-bottom: 200px;
-
-   */
   }
 }
 
@@ -87,16 +77,15 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+  line-height: 1.615;
+  letter-spacing: 0.06em;
+  font-size: 5.42vw;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (min-width: $mobile) {
     font-size: 26px;
-    line-height: 1.615;
-    letter-spacing: 0.06em;
-    /* 
-  padding: 0;
-
-  
-  font-size: 44px;
-  line-height: 1.36; */
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }

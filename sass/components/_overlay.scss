@@ -1,11 +1,13 @@
 .work-element-description {
-  font-size: 18px;
+  font-size: 4vw;
   line-height: 1.556;
   text-align: left;
   margin-top: 0;
   margin-bottom: 0;
-
   color: $color-light-main;
+  @media screen and(min-width: $mobile) {
+    font-size: 18px;
+  }
 }
 
 .work-element-overlay {
@@ -19,13 +21,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 77px 24px;
+  padding: 16.04vw 5vw;
 
   transform: translateY(100%);
   transition: transform $time-main $timing-function-main,
     z-index $time-main $timing-function-main;
 
   background-color: rgba(33, 150, 243, 0.9);
+
+  @media screen and (min-width: $mobile) {
+    padding: 77px 24px;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 63px;
+    padding-bottom: 63px;
+  }
+
   .work-link:hover &,
   .work-link:focus & {
     transform: translateY(0);

@@ -1,14 +1,17 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
   background-color: $background-color-footer;
+  text-align: left;
 }
 
 .part-address {
   margin-bottom: 60px;
-  /* width: 231px;
-  margin-right: 70px; */
+  @media screen and(min-width: $desktop) {
+    width: 231px;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-address,
@@ -35,20 +38,26 @@
 .footer-address {
   color: $color-light-main;
   margin-bottom: 8px;
-  /* margin-bottom: 9px; */
-
   font-style: normal;
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .element-list {
   margin-bottom: 8px;
-  /*margin-bottom: 9px;*/
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-part-social {
   margin-bottom: 60px;
-  /* width: 206px;
-  margin-right: 93px; */
+  @media screen and(min-width: $desktop) {
+    width: 206px;
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-plea {

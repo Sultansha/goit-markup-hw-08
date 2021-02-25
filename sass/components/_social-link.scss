@@ -8,7 +8,10 @@
 .social-item-mobile {
   &:not(:last-child) {
     position: relative;
-    margin-right: 20px;
+    margin-right: 4.17vw;
+    @media screen and(min-width: $mobile) {
+      margin-right: 20px;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -33,33 +36,38 @@
     color: $color-link-main;
 
     background-color: $color-light-main;
+    @media screen and(min-width: $desktop) {
+      transition: color $time-main $timing-function-main,
+        background-color $time-main $timing-function-main;
 
-    /*  transition: color $time-main $timing-function-main,
-      background-color $time-main $timing-function-main;
+      @include colorLink-focus($color-light-main);
 
-    @include colorLink-focus($color-light-main);
-    
-    &:hover,
-    &:focus {
-      background-color: $color-accent;
-    } */
+      &:hover,
+      &:focus {
+        background-color: $color-accent;
+      }
+    }
   }
 
   &-footer {
     color: $color-light-main;
     background-color: $background-color-footer-social-link;
-
-    /* &:hover,
-    &:focus {
-      background-color: $color-accent;
-    } */
+    @media screen and(min-width: $desktop) {
+      &:hover,
+      &:focus {
+        background-color: $color-accent;
+      }
+    }
   }
 
   &-mobile {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 3.75vw;
     line-height: 1.222;
 
     color: $color-accent;
+    @media screen and(min-width: $mobile) {
+      font-size: 18px;
+    }
   }
 }
