@@ -6,10 +6,8 @@
   background-color: $color-light-main;
 
   margin: 15px;
+  max-width: 450px;
 
-  @media screen and(min-width: $mobile) {
-    width: 450px;
-  }
   @media screen and(min-width: $tablet-min) {
     width: 354px;
   }

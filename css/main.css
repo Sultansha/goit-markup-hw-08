@@ -654,6 +654,7 @@ img {
 .nav-mobile {
   display: flex;
   height: 100vh;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding: 10vw 8.33vw;
@@ -662,7 +663,6 @@ img {
 
 @media screen and (min-width: 480px) {
   .nav-mobile {
-    width: 480px;
     padding: 48px 40px;
   }
 }
@@ -1171,12 +1171,7 @@ img {
   max-width: 100%;
   background-color: #ffffff;
   margin: 15px;
-}
-
-@media screen and (min-width: 480px) {
-  .team-item {
-    width: 450px;
-  }
+  max-width: 450px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1287,7 +1282,8 @@ img {
 }
 
 .follow-input {
-  width: auto;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1295,12 +1291,6 @@ img {
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: 480px) {
-  .follow-input {
-    width: 450px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1338,7 +1328,8 @@ img {
 }
 
 .follow-input {
-  width: auto;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1346,12 +1337,6 @@ img {
   border-radius: 4px;
   background-color: transparent;
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: 480px) {
-  .follow-input {
-    width: 450px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
