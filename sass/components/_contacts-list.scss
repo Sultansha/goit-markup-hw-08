@@ -72,6 +72,24 @@
   }
 }
 
+.contacts-icon-desktop {
+  @media screen and(max-width: 1199px) {
+    display: none;
+  }
+  @media screen and(min-width: 1200px) {
+    display: inline-block;
+  }
+}
+
+.contacts-icon-tablet {
+  @media screen and(max-width: 1199px) {
+    display: inline-block;
+  }
+  @media screen and(min-width: 1200px) {
+    display: none;
+  }
+}
+
 .contact-tel {
   font-size: 7.08vw;
   line-height: 1.176;

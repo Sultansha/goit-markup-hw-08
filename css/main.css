@@ -813,6 +813,30 @@ img {
   }
 }
 
+@media screen and (max-width: 1199px) {
+  .contacts-icon-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-icon-desktop {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts-icon-tablet {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-icon-tablet {
+    display: none;
+  }
+}
+
 .contact-tel {
   font-size: 7.08vw;
   line-height: 1.176;
