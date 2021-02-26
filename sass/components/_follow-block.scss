@@ -33,6 +33,10 @@
   background-color: transparent;
   margin-bottom: 20px;
 
+  @media screen and(min-width: $tablet-min) {
+    width: 450px;
+  }
+
   @media screen and(min-width: $desktop) {
     width: 358px;
     margin-bottom: 0;

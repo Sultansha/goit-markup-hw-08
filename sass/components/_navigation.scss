@@ -16,6 +16,7 @@
     z-index: 1;
     overflow-y: scroll;
   }
+
   @media screen and(min-width: $tablet-min) {
     display: block;
     position: static;
@@ -42,7 +43,8 @@
     justify-content: space-between;
     height: auto;
     padding: 0;
-    width: auto;
+
+    max-width: 100%;
   }
 }
 
