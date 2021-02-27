@@ -66,25 +66,21 @@
 
 .contacts-icon {
   display: none;
-  @media screen and(min-width: $tablet-min) {
+}
+
+.contacts-icon-desktop {
+  @media screen and(min-width: 1200px) {
     display: inline-block;
     margin-right: 8px;
   }
 }
 
-.contacts-icon-desktop {
-  @media screen and(max-width: 1199px) {
-    display: none;
-  }
-  @media screen and(min-width: 1200px) {
-    display: inline-block;
-  }
-}
-
 .contacts-icon-tablet {
-  @media screen and(max-width: 1199px) {
+  @media screen and(min-width: $tablet-min) {
     display: inline-block;
+    margin-right: 8px;
   }
+
   @media screen and(min-width: 1200px) {
     display: none;
   }

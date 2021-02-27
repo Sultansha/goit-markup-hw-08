@@ -806,28 +806,17 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .contacts-icon {
+@media screen and (min-width: 1200px) {
+  .contacts-icon-desktop {
     display: inline-block;
     margin-right: 8px;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .contacts-icon-desktop {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contacts-icon-desktop {
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .contacts-icon-tablet {
     display: inline-block;
+    margin-right: 8px;
   }
 }
 
