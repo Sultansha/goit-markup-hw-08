@@ -7,10 +7,14 @@ body {
 
   background-color: $color-light-main;
   color: $color-text-main;
-}
 
-body.modal-open {
-  overflow: hidden;
+  &.modal-open {
+    overflow: hidden;
+  }
+
+  &.menu-open {
+    overflow-y: hidden;
+  }
 }
 
 a,
